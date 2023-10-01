@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags, title, and stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Movies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('bg3.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Column for Movie Poster -->
+            <div class="col-md-4">
+                <img src="" alt="Movie Poster" id="poster" class="img-fluid">
+            </div>
+
+            <!-- Column for Movie Details -->
+            <div class="col-md-8">
+                <h1 id="title"></h1>
+                <p><strong>Year:</strong> <span id="year"></span></p>
+                <p><strong>Genre:</strong> <span id="genre"></span></p>
+                <p><strong>IMDb Rating:</strong> <span id="imdbRating"></span></p>
+                <p><strong>Plot:</strong></p>
+                <p id="plot"></p>
+            </div>
+        </div>
+
+        <!-- Scenes Section -->
+        <div class="row mt-4">
+            <!-- Column for Scenes Title -->
+            <div class="col-md-4">
+                <h2>Scenes</h2>
+            </div>
+
+            <!-- Column for Scene Images -->
+            <div class="col-md-8">
+                <div class="row" id="sceneImages">
+                    <!-- Images will be added dynamically here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="moviedetails.js"></script>
+
+</body>
+</html>
